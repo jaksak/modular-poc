@@ -7,10 +7,13 @@ B (`B1Command`) required action in module A `A1Command`).
 
 POC checks possibility to split group of modules to separated app which communicate to different modules by REST.
 
-## Switching app mode
+## App profile mode
 
-Enabling direct communication between modules in different group required only one change - activating profile.
+### A,B (all activated)
 
-When you want to run app with modules A, you should add profile `A`.
+All modules work - direct communication between modules.
 
-When you want to run app with modules B, you should add profile `B`.
+### only one module A or B
+
+App activate only one module - when app must run action in different module, it uses rest communication (you must run
+app twice, app1 works with profile A, app2 works with profile B)
