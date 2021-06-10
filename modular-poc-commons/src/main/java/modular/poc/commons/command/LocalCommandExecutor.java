@@ -1,7 +1,6 @@
 package modular.poc.commons.command;
 
 import lombok.RequiredArgsConstructor;
-import modular.poc.commons.command.handler.CommandHandler;
 
 import java.util.concurrent.*;
 

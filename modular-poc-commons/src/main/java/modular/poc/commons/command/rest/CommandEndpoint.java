@@ -15,6 +15,7 @@ public class CommandEndpoint {
     private final ObjectMapper objectMapper;
 
     @PostMapping("command")
+    @SuppressWarnings("unchecked")
     public <T> CommandResult<?> call(@RequestBody CommandRequest request) throws ClassNotFoundException, JsonProcessingException {
         CommandResult.CommandResultBuilder<T> result = CommandResult.builder();
         Class<? extends Command<T>> commandClass = (Class<? extends Command<T>>) Class.forName(request.getCommandClass());
