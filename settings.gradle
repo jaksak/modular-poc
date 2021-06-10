@@ -1,0 +1,5 @@
+rootProject.name = 'modular-poc'
+include 'modular-poc-commons'
+include 'group-a-module1'
+include 'group-b-module1'
+
